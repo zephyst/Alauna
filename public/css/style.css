@@ -1,0 +1,106 @@
+main {
+    width: 80vw;
+    margin: 18vh auto 0;
+}
+
+.etapes, .ingredient {
+    margin-bottom: 10vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 3vh;
+    font-family: "Generisch Sans";
+}
+
+h2  {
+    font-family: "Generisch Sans";
+    text-align: center;
+    font-size: 2em;
+}
+
+.listeIngredient {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    row-gap: 3vh;
+    justify-items: center;
+}
+
+.listeIngredient div {
+    width: 18vw;
+}
+
+.listeIngredient p {
+    width: 17vw;
+    margin: auto;
+}
+
+.listeIngredient div:nth-child(3) {
+    grid-column: 4/5;
+}
+
+.listeIngredient div:nth-child(2) {
+    grid-area: 1/2/2/4;
+}
+
+.listeIngredient div:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.listeIngredient div:nth-child(5) {
+    grid-column: 3/5;
+}
+
+#Etapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+#Etapes div {
+    width: 70vw;
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+#Etapes div:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+#Etapes div:nth-of-type(even) p {
+    text-align: right;
+}
+
+#Etapes img {
+    width: 30vw;
+    box-shadow: rgba(0, 0, 0, 0.33) 0 0 10px;
+}
+
+#Etapes p {
+    padding: 2vh;
+    border-radius: 20px;
+}
+
+#Etapes {
+    background:no-repeat url("../img/chemin-tiret.svg");
+    background-size: cover;
+}
+
+.tests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+video {
+    width: 60vw;
+}
+
+main #degustation {
+    font-size: 4.7em;
+    text-transform: uppercase;
+    padding: 7vh 0 10vh;
+}

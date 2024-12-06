@@ -1,0 +1,28 @@
+#tmp img {
+    position: absolute;
+    z-index: -1;
+}
+
+#tmpAdresse, #tmpMadeSince {
+    opacity: 40%;
+}
+
+#tmpMadeSince {
+    top: 3vh;
+    right: -3vw;
+    width: 11rem;
+    rotate: 30deg;
+}
+
+#tmpAdresse {
+    bottom: 0;
+    right: -3vw;
+    width: 12rem;
+}
+
+#tmpNevada {
+    top: 3vh;
+    left: -1vw;
+    width: 15rem;
+    rotate: 15deg;
+}

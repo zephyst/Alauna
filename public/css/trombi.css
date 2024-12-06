@@ -1,0 +1,146 @@
+@font-face {
+    src: url("../fonts/ClearSans-Regular.ttf");
+    font-family: "Clear Sans";
+}
+@font-face {
+    src: url("../fonts/GenerischSans-SemiBold.ttf");
+    font-family: "Generisch Sans";
+}
+
+#equipecom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10vw;
+    justify-content: center;
+    margin: 2vw 10vw;
+}
+
+
+#equipebrasserie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10vw;
+    margin: 2vw 2vw 22vw 2vw;
+}
+
+h1 {
+    font-family: Generisch Sans, Arial;
+    margin: 10vw;
+    text-align: center;
+    font-size: 3vw;
+}
+
+#equipecom .carte:nth-child(even) {
+    transform: rotate(10deg);
+}
+
+#equipecom .carte:nth-child(odd) {
+    transform: rotate(353deg);
+}   
+
+#equipebrasserie .carte:nth-child(even) {
+    transform: rotate(10deg);
+}
+
+#equipebrasserie .carte:nth-child(odd) {
+    transform: rotate(353deg);
+}   
+
+.role {
+    position: relative;
+    top: 50%;
+    font-family: Generisch Sans, Arial;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.25em;
+}
+
+.carte:hover img {
+    filter: blur(2px);
+    opacity:0.5;
+
+}
+
+.carte:hover .role {
+    opacity: 1;
+    z-index:5;   
+    transition: opacity 0.3s ease;
+
+}
+
+
+
+/* code pour le pop up */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Generisch Sans, Arial;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+    font-family: Generisch Sans, Arial;
+}
+
+.popup-content h2, .popup-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.popup-content p {
+    margin: 20px 0;
+    color: #555;
+}
+
+.popup-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#photoPopup {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

@@ -1,0 +1,99 @@
+@font-face {
+   src: url("../fonts/ClearSans-Regular.ttf");
+   font-family: "Clear Sans";
+}
+@font-face {
+   src: url("../fonts/GenerischSans-SemiBold.ttf");
+   font-family: "Generisch Sans";
+}
+
+@font-face {
+    font-family: Bradley;
+    src: url("../fonts/bradley.ttf");
+}
+.billet {
+   grid-column: 1/ span 5;
+   grid-row: 1/ span 5;
+   box-shadow: 5px 5px 5px rgb(115, 104, 104);
+   border-radius: 8% 8% 0% 0%;
+}
+
+.evenement {
+   display: grid;
+   
+}
+.enzyme {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 28% 17% 15% 40%;
+    margin: 5% 20%;
+}
+
+.description {
+    grid-column: 1/span 2;
+    grid-row: 2/ span 5;
+    margin: 9% 6%;
+    font-family: Clear Sans;
+    text-align: justify;
+
+}
+.date {
+    grid-column: 5;
+    grid-row: 2;
+    margin: auto;
+    font-family: Bradley;
+}
+
+.adresse {
+    grid-column: 5;
+    grid-row: 3;
+    margin: auto;
+    font-family: Bradley;
+    text-align: center;
+}
+.intitule {
+    margin: 30% auto;
+    grid-row: 4;
+    grid-column: 4;
+    font-family: Generisch Sans;
+}
+
+.festival {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 28% 17% 15% 40%;
+    margin: 5% 20%;
+}
+
+.popup {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 28% 17% 15% 40%;
+    margin: 5% 20%;
+}
+
+
+#titre {
+font-size: 3em;
+text-align: center;
+margin: 2em 0em;
+font-family: Generisch Sans, Arial;
+}
+
+@media screen and (max-width: 700px) {
+    .enzyme {
+        width: 80%;
+        font-size: 60%;
+        margin: 5% auto;
+    }
+    .festival {
+        width: 80%;
+        font-size: 60%;
+        margin: 5% auto;
+    }
+    .popup {
+        width: 80%;
+        font-size: 60%;
+        margin: 5% auto;
+    }
+}

@@ -1,0 +1,142 @@
+@font-face {
+    src: url("../fonts/ClearSans-Regular.ttf");
+    font-family: "Clear Sans";
+}
+@font-face {
+    src: url("../fonts/GenerischSans-SemiBold.ttf");
+    font-family: "Generisch Sans";
+}
+
+
+.prev, .next {
+    img {
+        width: 3rem;
+    }
+    cursor: pointer;
+    margin-top: -1.5rem;
+    top: 48vh   ;
+    position: absolute;
+
+
+    transition: 0.5s ease;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.1);
+}
+
+.next {
+    right: 0;
+}
+
+.image-container {
+    overflow-x: hidden;
+    max-width: 100vw;
+    height: 68vh;
+}
+
+.image-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100vw;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+
+
+#nevada {background-image: url("../img/fondsCarrousel/nevadafond.svg");}
+#sahara {background-image: url("../img/fondsCarrousel/saharafond.svg ");}
+#pampa {background-image: url("../img/fondsCarrousel/pampafond.svg");}
+#salinas {background-image: url("../img/fondsCarrousel/salinasfond.svg");}
+#laponie {background-image: url("../img/fondsCarrousel/laponiefond.svg");}
+
+
+.carrouselItem {
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 68vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrouselItem > a > img {
+    width: 6vw;
+    height: auto;
+}
+
+.carrouselItem > a p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+/* pop up age */ 
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+}
+
+.popup-content {
+    background-color: #fffce5;
+    width: 40%;
+    margin: 20% auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family: Generisch Sans, Arial;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Generisch Sans, Arial;
+}
+
+.popup-content p {
+    color: #000;
+    margin: revert;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #DEBE78;
+}
+
+@media screen and (max-width: 700px) {
+    #nevada {background-image: url("../img/fonds/5fond.svg");}
+    #sahara {background-image: url("../img/fonds/3fond.svg ");}
+    #pampa {background-image: url("../img/fonds/1fond.svg");}
+    #salinas {background-image: url("../img/fonds/4fond.svg");}
+    #laponie {background-image: url("../img/fonds/2fond.svg");}
+
+    .carrouselItem > a > img {
+        width: auto;
+        height: 50vh;
+    }
+
+}
